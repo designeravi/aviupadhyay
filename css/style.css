@@ -9955,3 +9955,8 @@ textarea.form-control {
 .reel-box:hover .reel-title {
   color: #ffbd39;
 }
+
+.owl-stage,
+.owl-item {
+  touch-action: pan-y !important;
+}
