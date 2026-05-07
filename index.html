@@ -30,14 +30,23 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+
+
+  <a href="https://wa.me/918871155229" 
+   class="whatsapp-float" 
+   target="_blank">
+
+   <i class="fa-brands fa-whatsapp"></i>
+
+</a>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+	<div id="progress-bar"></div>
 	<!-- Loader -->
 <div id="loader">
-
-  <div class="loader-logo">
-    AVINASH
-  </div>
-
+	<div class="loader-logo">
+		AVINASH
+	</div>
 </div>
 	  
 	  
@@ -665,9 +674,10 @@
               <h2 class="ftco-heading-2">About</h2>
               <p>Feel free to contact me for graphic design, video editing, branding, and creative digital projects.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <!-- <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li> -->
                 <li class="ftco-animate"><a href="https://www.facebook.com/avinash.upadhyay.50552"><span class="icon-facebook"></span></a></li>
                 <li class="ftco-animate"><a href="https://www.instagram.com/kyu_avinash?igsh=bjZmdzB6YjR3MTB5"><span class="icon-instagram"></span></a></li>
+				 <li class="ftco-animate"><a href="https://www.linkedin.com/in/avinash-upadhyay-7a8993274"><span class="icon-linkedin"></span></a></li>
               </ul>
             </div>
           </div>
@@ -782,6 +792,22 @@ window.addEventListener("load", function(){
   setTimeout(() => {
     loader.style.display = "none";
   }, 600);
+});
+
+// page process bar
+window.addEventListener("scroll", () => {
+
+  let scrollTop = document.documentElement.scrollTop;
+
+  let scrollHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+
+  let progress = (scrollTop / scrollHeight) * 100;
+
+  document.getElementById("progress-bar").style.width =
+    progress + "%";
+
 });
 </script>
     
